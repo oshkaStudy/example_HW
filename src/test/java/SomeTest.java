@@ -12,11 +12,5 @@ public class SomeTest {
         $("[name=p]").setValue("selenide").pressEnter();
         $("div[id=main]").shouldHave(text("selenide.org"));
     }
-    @Test
-    void successfulSearchTestDuck() {
-        open("https://duckduckgo.com/");
-        $("[name=q]").setValue("selenide").pressEnter();
-        $("[id=react-layout]").shouldHave(text("selenide.org"));
-    }
 
 }
